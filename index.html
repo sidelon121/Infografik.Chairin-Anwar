@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis Chairil Anwar - Farhan Akmal XII 4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            display: none;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .active-page {
+            display: block;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .accordion-button {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-button:hover {
+            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+        }
+
+        .content-hidden {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .content-visible {
+            max-height: 1000px;
+            transition: max-height 0.5s ease;
+        }
+
+        .golden-border {
+            border: 2px solid transparent;
+            background: linear-gradient(135deg, #1a1a2e, #16213e) padding-box,
+                linear-gradient(135deg, #fbbf24, #f59e0b) border-box;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .infographic-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 1rem 0;
+        }
+
+        .image-container {
+            position: relative;
+            margin: 1.5rem 0;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #a0aec0;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .copy-button {
+            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            color: #e2e8f0;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .copy-button:hover {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            color: #1a202c;
+        }
+
+        .copy-success {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+
+        .quote-box {
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 4px solid #fbbf24;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page 1: Introduction -->
+    <div id="page1" class="page active-page">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Profile Photo -->
+            <div class="w-48 h-48 mx-auto mb-8 rounded-full golden-border overflow-hidden">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4d20be77-ff3e-41be-9b52-ff6e4c1d5854.png"
+                    alt="Potret Chairil Anwar sastrawan legendaris Indonesia dengan ekspresi serius dan intens, latar belakang gelap"
+                    class="w-full h-full object-cover">
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold hero-title mb-6">
+                Farhan Akmal
+            </h1>
+            <p class="text-2xl text-gray-300 mb-8">Kelas XII 4</p>
+
+            <!-- Personal Introduction -->
+            <div class="card p-8 mb-12">
+                <h2 class="text-3xl font-semibold text-yellow-400 mb-6">Selamat Datang</h2>
+                <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                    Perkenalkan, saya <span class="text-yellow-400 font-semibold">Farhan Akmal</span>,
+                    siswa kelas <span class="text-yellow-400 font-semibold">XII 4</span>. Website ini
+                    saya buat sebagai bentuk apresiasi terhadap salah satu sastrawan terbesar Indonesia.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Mari kita menjelajahi kehidupan dan karya <span class="text-yellow-400 font-semibold">Chairil
+                        Anwar</span>,
+                    sang pelopor Angkatan '45 yang telah menginspirasi banyak generasi.
+                </p>
+            </div>
+
+            <!-- Features Preview -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="card p-6 text-center">
+                    <div class="feature-icon">📖</div>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-3">Biografi Lengkap</h3>
+                    <p class="text-gray-300">Temukan perjalanan hidup Chairil Anwar dari masa kecil hingga menjadi
+                        legenda</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-3">Prestasi Gemilang</h3>
+                    <p class="text-gray-300">Pelajari pencapaian dan pengakuan yang diraih Chairil Anwar</p>
+                </div>
+
+                <div class="card p-6 text-center">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-3">Fakta Menarik</h3>
+                    <p class="text-gray-300">Temukan hal-hal unik dan menarik tentang kehidupan Chairil Anwar</p>
+                </div>
+            </div>
+
+            <!-- Navigation Button -->
+            <button onclick="showPage('page2')"
+                class="nav-button px-8 py-4 rounded-full text-lg font-semibold text-gray-900 cursor-pointer">
+                Jelajahi Infografis Chairil Anwar →
+            </button>
+        </div>
+    </div>
+
+    <!-- Page 2: Infographic -->
+    <div id="page2" class="page">
+        <div class="max-w-4xl mx-auto">
+            <!-- Back Button -->
+            <button onclick="showPage('page1')"
+                class="mb-8 px-6 py-3 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors cursor-pointer">
+                ← Kembali ke Halaman Utama
+            </button>
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-6xl font-bold hero-title mb-4">
+                    Chairil Anwar
+                </h1>
+                <p class="text-xl text-gray-300">Sang Pelopor Angkatan '45</p>
+            </div>
+
+            <!-- Infographic Sections -->
+            <div class="space-y-6">
+                <!-- Biografi Section -->
+                <div class="card p-6">
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent('biografi')">
+                        📖 Biografi Singkat
+                        <span class="text-yellow-400">▼</span>
+                    </button>
+                    <div id="biografi" class="content-hidden">
+                        <div class="px-6 pt-4 pb-6">
+                            <div class="image-container">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/294a5a9c-2a04-415c-8b31-3194fc6b28ca.png"
+                                    alt="Chairil Anwar muda sedang duduk di meja tulis dengan buku dan pena, ekspresi serius dan fokus"
+                                    class="infographic-image">
+                                <div class="image-caption">Chairil Anwar dalam moment kreatif menulis puisi</div>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Chairil Anwar lahir di Medan, 26 Juli 1922 dan meninggal di Jakarta, 28 April 1949 pada
+                                usia 26 tahun.
+                                Ia dikenal sebagai pelopor Angkatan '45 bersama Asrul Sani dan Rivai Apin.
+                            </p>
+                            <p class="text-gray-300">
+                                Meskipun hidupnya singkat, Chairil berhasil menciptakan banyak karya sastra yang
+                                monumental
+                                dan mengubah wajah kesusastraan Indonesia modern. Ia meninggalkan warisan yang terus
+                                dikenang
+                                hingga generasi sekarang.
+                            </p>
+
+                            <div class="flex justify-end mt-4">
+                                <button class="copy-button" onclick="copyContent('biografi-content')">
+                                    Salin Konten
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karya Terkenal Section -->
+                <div class="card p-6">
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent('karya')">
+                        ✍️ Karya-Karya Monumental
+                        <span class="text-yellow-400">▼</span>
+                    </button>
+                    <div id="karya" class="content-hidden">
+                        <div class="px-6 pt-4 pb-6">
+                            <div class="image-container">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eed509d1-9277-400d-bbdd-7cc23f3e725b.png"
+                                    alt="Koleksi buku-buku karya Chairil Anwar termasuk Deru Campur Debu dan Kerikil Tajam tersusun rapi di rak kayu"
+                                    class="infographic-image">
+                                <div class="image-caption">Koleksi karya sastra Chairil Anwar yang legendaris</div>
+                            </div>
+
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• <span class="text-yellow-400 font-semibold">Aku</span> (1943) - Puisi paling
+                                    terkenal yang menjadi simbol semangat perjuangan</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Deru Campur Debu</span> (1949) -
+                                    Kumpulan puisi yang merevolusi sastra Indonesia</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Kerikil Tajam</span> (1949) - Kumpulan
+                                    puisi penuh kritik sosial</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Tiga Menguak Takdir</span> (1950) -
+                                    Kumpulan puisi bersama Asrul Sani dan Rivai Apin</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Aku Ini Binatang Jalang</span> - Puisi
+                                    yang menjadi ciri khas gaya menulisnya</li>
+                            </ul>
+
+                            <div class="quote-box">
+                                <p class="text-yellow-400 font-semibold">"Aku" - Potongan Puisi</p>
+                                <p class="text-gray-300 italic">
+                                    "Kalau sampai waktuku<br>
+                                    'Ku mau tak seorang 'kan merayu<br>
+                                    Tidak juga kau<br>
+                                    Tak perlu sedu sedan itu"
+                                </p>
+                            </div>
+
+                            <div class="flex justify-end mt-4">
+                                <button class="copy-button" onclick="copyContent('karya-content')">
+                                    Salin Konten
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gaya Menulis Section -->
+                <div class="card p-6">
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent('gaya')">
+                        🎨 Gaya dan Pengaruh
+                        <span class="text-yellow-400">▼</span>
+                    </button>
+                    <div id="gaya" class="content-hidden">
+                        <div class="px-6 pt-4 pb-6">
+                            <div class="image-container">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b5bbd5c7-221e-4df2-a188-a54118c5c457.png"
+                                    alt="Naskah tulisan tangan Chairil Anwar dengan coretan-coretan kreatif dan revisi, menunjukkan proses kreatifnya"
+                                    class="infographic-image">
+                                <div class="image-caption">Naskah asli tulisan tangan Chairil Anwar</div>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Chairil Anwar dikenal dengan gaya menulis yang revolusioner dan individualistis.
+                                Ia membawa angin segar dalam kesusastraan Indonesia dengan bahasa yang lebih bebas,
+                                lugas, dan penuh emosi. Gaya bahasanya yang modern dan tidak terikat aturan konvensional
+                                menjadi ciri khas yang diikuti banyak sastrawan generasi berikutnya.
+                            </p>
+                            <p class="text-gray-300">
+                                Pengaruh sastra Barat, khususnya dari penulis seperti Rainer Maria Rilke, W.H. Auden,
+                                dan Hendrik Marsman, sangat terasa dalam karya-karyanya. Namun ia berhasil mengolah
+                                pengaruh tersebut menjadi sesuatu yang khas Indonesia.
+                            </p>
+
+                            <div class="flex justify-end mt-4">
+                                <button class="copy-button" onclick="copyContent('gaya-content')">
+                                    Salin Konten
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prestasi Section -->
+                <div class="card p-6">
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent('prestasi')">
+                        🏆 Prestasi dan Pengakuan
+                        <span class="text-yellow-400">▼</span>
+                    </button>
+                    <div id="prestasi" class="content-hidden">
+                        <div class="px-6 pt-4 pb-6">
+                            <div class="image-container">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d7c948c8-074b-42f6-8cb6-e7c7d4adeaeb.png"
+                                    alt="Upacara penganugerahan gelar Pahlawan Nasional untuk Chairil Anwar dengan bendera Indonesia dan penghormatan militer"
+                                    class="infographic-image">
+                                <div class="image-caption">Pengakuan Chairil Anwar sebagai Pahlawan Nasional</div>
+                            </div>
+
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• <span class="text-yellow-400 font-semibold">Pahlawan Nasional</span> - Dianugerahi
+                                    gelar Pahlawan Nasional oleh pemerintah Indonesia pada tahun 2010</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pelopor Angkatan '45</span> - Diakui
+                                    sebagai tokoh utama yang mempelopori gerakan sastra modern Indonesia</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pengaruh Abadi</span> - Karya-karyanya
+                                    masih dipelajari di sekolah dan universitas hingga sekarang</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Inspirasi Generasi</span> -
+                                    Menginspirasi ribuan sastrawan dan penyair generasi berikutnya</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Warisan Budaya</span> - Puisi-puisinya
+                                    menjadi bagian dari kurikulum pendidikan nasional</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pengakuan Internasional</span> -
+                                    Karyanya diterjemahkan ke berbagai bahasa asing</li>
+                            </ul>
+
+                            <div class="flex justify-end mt-4">
+                                <button class="copy-button" onclick="copyContent('prestasi-content')">
+                                    Salin Konten
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fakta Menarik Section -->
+                <div class="card p-6">
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent('fakta')">
+                        🔍 Fakta Menarik
+                        <span class="text-yellow-400">▼</span>
+                    </button>
+                    <div id="fakta" class="content-hidden">
+                        <div class="px-6 pt-4 pb-6">
+                            <div class="image-container">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e310886-2539-4056-a1f0-d3a20abaf28a.png"
+                                    alt="Chairil Anwar sedang membaca puisi di depan audiens dengan ekspresi penuh passion dan intensitas"
+                                    class="infographic-image">
+                                <div class="image-caption">Chairil Anwar dalam moment membacakan puisi</div>
+                            </div>
+
+                            <ul class="text-gray-300 space-y-3">
+                                <li>• Hanya bersekolah sampai HBS (setara SMA) tetapi otodidak dalam sastra dan sangat
+                                    gemar membaca</li>
+                                <li>• Bekerja sebagai redaktur di berbagai majalah termasuk "Gema Suasana" dan "Zenith"
+                                </li>
+                                <li>• Meninggal karena penyakit TBC di usia sangat muda, 26 tahun</li>
+                                <li>• Puisi "Aku" ditulis ketika ia berusia 21 tahun dan menjadi karya paling fenomenal
+                                </li>
+                                <li>• Dijuluki "Si Binatang Jalang" dari judul puisinya yang terkenal</li>
+                                <li>• Sangat produktif menulis meskipun hidup dalam kesulitan ekonomi</li>
+                                <li>• Makamnya di TPU Karet Bivak, Jakarta, sering dikunjungi pecinta sastra</li>
+                            </ul>
+
+                            <div class="flex justify-end mt-4">
+                                <button class="copy-button" onclick="copyContent('fakta-content')">
+                                    Salin Konten
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warisan Section -->
+                <div class="card p-6">
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                        onclick="toggleContent('warisan')">
+                        🌟 Warisan dan Pengakuan
+                        <span class="text-yellow-400">▼</span>
+                    </button>
+                    <div id="warisan" class="content-hidden">
+                        <div class="px-6 pt-4 pb-6">
+                            <div class="image-container">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e54e3b89-8759-459a-bbde-4d780b7ad1a4.png"
+                                    alt="Monumen atau patung Chairil Anwar di taman sastra dengan latar belakang pepohonan dan bangunan bersejarah"
+                                    class="infographic-image">
+                                <div class="image-caption">Monumen penghormatan untuk Chairil Anwar</div>
+                            </div>
+
+                            <p class="text-gray-300 mb-4">
+                                Chairil Anwar diakui sebagai salah satu sastrawan terpenting dalam sejarah sastra
+                                Indonesia.
+                                Karya-karyanya terus dipelajari, dianalisis, dan dihargai hingga saat ini. Warisannya
+                                tidak
+                                hanya berupa puisi-puisi indah, tetapi juga semangat pembaruan dan keberanian untuk
+                                berbeda.
+                            </p>
+                            <p class="text-gray-300">
+                                Pada tahun 2010, pemerintah Indonesia menganugerahinya gelar Pahlawan Nasional
+                                atas kontribusinya yang luar biasa dalam perkembangan sastra dan budaya Indonesia.
+                                Namanya tetap abadi sebagai ikon sastra modern Indonesia yang inspiratif.
+                            </p>
+
+                            <div class="flex justify-end mt-4">
+                                <button class="copy-button" onclick="copyContent('warisan-content')">
+                                    Salin Konten
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="text-center mt-16 mb-8">
+                <div class="card p-6">
+                    <p class="text-gray-300">
+                        Created with ❤️ by <span class="text-yellow-400 font-semibold">Farhan Akmal - XII 4</span>
+                    </p>
+                    <p class="text-sm text-gray-400 mt-2">
+                        Website Infografis Chairil Anwar - 2024
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Page Navigation
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active-page');
+            });
+
+            // Show selected page
+            document.getElementById(pageId).classList.add('active-page');
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Accordion Functionality
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const button = content.previousElementSibling;
+            const arrow = button.querySelector('span');
+
+            content.classList.toggle('content-hidden');
+            content.classList.toggle('content-visible');
+
+            // Rotate arrow
+            if (content.classList.contains('content-visible')) {
+                arrow.textContent = '▲';
+            } else {
+                arrow.textContent = '▼';
+            }
+        }
+
+        // Copy Content Function
+        function copyContent(sectionId) {
+            const contentDiv = document.getElementById(sectionId);
+            if (!contentDiv) {
+                // Create temporary content for copying
+                const section = event.target.closest('.content-hidden, .content-visible');
+                const textContent = section ? section.innerText : '';
+
+                if (textContent) {
+                    navigator.clipboard.writeText(textContent).then(() => {
+                        const button = event.target;
+                        const originalText = button.textContent;
+                        button.textContent = '✓ Tersalin!';
+                        button.classList.add('copy-success');
+
+                        setTimeout(() => {
+                            button.textContent = originalText;
+                            button.classList.remove('copy-success');
+                        }, 2000);
+                    });
+                }
+                return;
+            }
+
+            const textToCopy = contentDiv.innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = '✓ Tersalin!';
+                button.classList.add('copy-success');
+
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copy-success');
+                }, 2000);
+            }).catch(err => {
+                console.error('Gagal menyalin teks: ', err);
+            });
+        }
+
+        // Initialize first accordion as open on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.getElementById('biografi')) {
+                toggleContent('biografi');
+            }
+        });
+    </script>
+</body>
+
+</html>
