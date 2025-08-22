@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infografik Chairil Anwar - Farhan Akmal XII 4</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com\"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -16,15 +17,18 @@
             margin: 0;
             padding: 0;
         }
+
         .page {
             display: none;
             min-height: 100vh;
             padding: 2rem 1rem;
         }
+
         .active-page {
             display: block;
             animation: fadeIn 0.8s ease-in;
         }
+
         .hero-title {
             font-family: 'Playfair Display', serif;
             background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
@@ -32,6 +36,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -39,56 +44,68 @@
             border-radius: 16px;
             transition: all 0.3s ease;
         }
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
+
         .accordion-button {
             background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
             border: none;
             transition: all 0.3s ease;
         }
+
         .accordion-button:hover {
             background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
         }
+
         .content-hidden {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease;
         }
+
         .content-visible {
             max-height: 1000px;
             transition: max-height 0.5s ease;
         }
+
         .golden-border {
             border: 2px solid transparent;
             background: linear-gradient(135deg, #1a1a2e, #16213e) padding-box,
                 linear-gradient(135deg, #fbbf24, #f59e0b) border-box;
         }
+
         .nav-button {
             background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
             border: none;
             transition: all 0.3s ease;
         }
+
         .nav-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
         }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         .feature-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
             display: inline-block;
         }
+
         .infographic-image {
             width: 100%;
             height: 250px;
@@ -96,10 +113,12 @@
             border-radius: 12px;
             margin: 1rem 0;
         }
+
         .image-container {
             position: relative;
             margin: 1.5rem 0;
         }
+
         .image-caption {
             text-align: center;
             font-style: italic;
@@ -107,6 +126,7 @@
             margin-top: 0.5rem;
             font-size: 0.9rem;
         }
+
         .copy-button {
             background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
             border: 1px solid rgba(251, 191, 36, 0.3);
@@ -117,14 +137,17 @@
             transition: all 0.3s ease;
             font-size: 0.9rem;
         }
+
         .copy-button:hover {
             background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
             color: #1a202c;
         }
+
         .copy-success {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
         }
+
         .quote-box {
             background: rgba(251, 191, 36, 0.1);
             border-left: 4px solid #fbbf24;
@@ -141,12 +164,13 @@
         <div class="max-w-4xl mx-auto text-center">
             <!-- Profile Photo -->
             <div class="w-48 h-48 mx-auto mb-8 rounded-full golden-border overflow-hidden">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Chairil_Anwar_cigarette.jpg" alt="Potret asli Chairil Anwar tahun 1949" class="w-full h-full object-cover">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chairil_Anwar.jpg/500px-Chairil_Anwar.jpg"
+                    alt="Potret asli Chairil Anwar tahun 1949" class="w-full h-full object-cover">
             </div>
             <h1 class="text-4xl md:text-6xl font-bold hero-title mb-6">
                 Farhan Akmal
             </h1>
-            <p class="text-2xl text-gray-300 mb-8">Kelas XII 4</p>
+            <p class="text-2xl text-gray-300 mb-8">XII 4</p>
             <!-- Personal Introduction -->
             <div class="card p-8 mb-12">
                 <h2 class="text-3xl font-semibold text-yellow-400 mb-6">Selamat Datang</h2>
@@ -166,7 +190,8 @@
                 <div class="card p-6 text-center">
                     <div class="feature-icon">📖</div>
                     <h3 class="text-xl font-semibold text-yellow-400 mb-3">Biografi Lengkap</h3>
-                    <p class="text-gray-300">Temukan perjalanan hidup Chairil Anwar dari masa kecil hingga menjadi legenda</p>
+                    <p class="text-gray-300">Temukan perjalanan hidup Chairil Anwar dari masa kecil hingga menjadi
+                        legenda</p>
                 </div>
                 <div class="card p-6 text-center">
                     <div class="feature-icon">🏆</div>
@@ -200,13 +225,14 @@
                 <h1 class="text-4xl md:text-6xl font-bold hero-title mb-4">
                     Chairil Anwar
                 </h1>
-                <p class="text-xl text-gray-300">Sang Pelopor Angkatan '45</p>
+                <p class="text-xl text-gray-300">Si Binatang Jalang</p>
             </div>
             <!-- Infographic Sections -->
             <div class="space-y-6">
                 <!-- Biografi Section -->
                 <div class="card p-6">
-                    <button class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
                         onclick="toggleContent('biografi')">
                         📖 Biografi Singkat
                         <span class="text-yellow-400">▼</span>
@@ -214,16 +240,20 @@
                     <div id="biografi" class="content-hidden">
                         <div class="px-6 pt-4 pb-6">
                             <div class="image-container">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Chairil_Anwar_Pelopor_Angkatan_%2745_p_48.jpg/800px-Chairil_Anwar_Pelopor_Angkatan_%2745_p_48.jpg" alt="Chairil Anwar muda, foto tahun 1949" class="infographic-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Chairil_Anwar_Pelopor_Angkatan_%2745_p_48.jpg/800px-Chairil_Anwar_Pelopor_Angkatan_%2745_p_48.jpg"
+                                    alt="Chairil Anwar muda, foto tahun 1949" class="infographic-image">
                                 <div class="image-caption">Chairil Anwar dalam foto tahun 1949</div>
                             </div>
                             <p class="text-gray-300 mb-4">
-                                Chairil Anwar lahir di Medan, 26 Juli 1922 dan meninggal di Jakarta, 28 April 1949 pada usia 26 tahun.
+                                Chairil Anwar lahir di Medan, 26 Juli 1922 dan meninggal di Jakarta, 28 April 1949 pada
+                                usia 26 tahun.
                                 Ia dikenal sebagai pelopor Angkatan '45 bersama Asrul Sani dan Rivai Apin.
                             </p>
                             <p class="text-gray-300">
-                                Meskipun hidupnya singkat, Chairil berhasil menciptakan banyak karya sastra yang monumental
-                                dan mengubah wajah kesusastraan Indonesia modern. Ia meninggalkan warisan yang terus dikenang
+                                Meskipun hidupnya singkat, Chairil berhasil menciptakan banyak karya sastra yang
+                                monumental
+                                dan mengubah wajah kesusastraan Indonesia modern. Ia meninggalkan warisan yang terus
+                                dikenang
                                 hingga generasi sekarang.
                             </p>
                             <div class="flex justify-end mt-4">
@@ -236,7 +266,8 @@
                 </div>
                 <!-- Karya Terkenal Section -->
                 <div class="card p-6">
-                    <button class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
                         onclick="toggleContent('karya')">
                         ✍️ Karya-Karya Monumental
                         <span class="text-yellow-400">▼</span>
@@ -244,15 +275,21 @@
                     <div id="karya" class="content-hidden">
                         <div class="px-6 pt-4 pb-6">
                             <div class="image-container">
-                                <img src="https://mojokstore.com/wp-content/uploads/2020/10/Aku-Berdasarkan-Perjalanan-Hidup-dan-Karya-Penyair-Chairil-Anwar.jpg" alt="Chairil Anwar sedang berpikir" class="infographic-image">
+                                <img src="https://assets.kompasiana.com/items/album/2022/07/25/chairil5-62deca7e3555e410cd0dfef2.jpg?t=o&v=770"
+                                    alt="Chairil Anwar sedang berpikir" class="infographic-image">
                                 <div class="image-caption">Koleksi karya sastra Chairil Anwar yang legendaris</div>
                             </div>
                             <ul class="text-gray-300 space-y-3">
-                                <li>• <span class="text-yellow-400 font-semibold">Aku</span> (1943) - Puisi paling terkenal yang menjadi simbol semangat perjuangan</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Deru Campur Debu</span> (1949) - Kumpulan puisi yang merevolusi sastra Indonesia</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Kerikil Tajam</span> (1949) - Kumpulan puisi penuh kritik sosial</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Tiga Menguak Takdir</span> (1950) - Kumpulan puisi bersama Asrul Sani dan Rivai Apin</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Aku Ini Binatang Jalang</span> - Puisi yang menjadi ciri khas gaya menulisnya</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Aku</span> (1943) - Puisi paling
+                                    terkenal yang menjadi simbol semangat perjuangan</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Deru Campur Debu</span> (1949) -
+                                    Kumpulan puisi yang merevolusi sastra Indonesia</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Kerikil Tajam</span> (1949) - Kumpulan
+                                    puisi penuh kritik sosial</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Tiga Menguak Takdir</span> (1950) -
+                                    Kumpulan puisi bersama Asrul Sani dan Rivai Apin</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Aku Ini Binatang Jalang</span> - Puisi
+                                    yang menjadi ciri khas gaya menulisnya</li>
                             </ul>
                             <div class="quote-box">
                                 <p class="text-yellow-400 font-semibold">"Aku" - Potongan Puisi</p>
@@ -273,7 +310,8 @@
                 </div>
                 <!-- Gaya Menulis Section -->
                 <div class="card p-6">
-                    <button class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
                         onclick="toggleContent('gaya')">
                         🎨 Gaya dan Pengaruh
                         <span class="text-yellow-400">▼</span>
@@ -281,7 +319,8 @@
                     <div id="gaya" class="content-hidden">
                         <div class="px-6 pt-4 pb-6">
                             <div class="image-container">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chairil_Anwar.jpg/500px-Chairil_Anwar.jpg?20090308103329" alt="Chairil Anwar menulis" class="infographic-image">
+                                <img src="https://imgx.sonora.id/crop/66x0:666x400/700x465/filters:format(webp):quality(50)/photo/2022/10/19/6201ce8754559jpeg-20221019011025.jpeg"
+                                    alt="Chairil Anwar menulis" class="infographic-image">
                                 <div class="image-caption">Chairil Anwar saat menulis puisi</div>
                             </div>
                             <p class="text-gray-300 mb-4">
@@ -305,7 +344,8 @@
                 </div>
                 <!-- Prestasi Section -->
                 <div class="card p-6">
-                    <button class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
                         onclick="toggleContent('prestasi')">
                         🏆 Prestasi dan Pengakuan
                         <span class="text-yellow-400">▼</span>
@@ -313,16 +353,23 @@
                     <div id="prestasi" class="content-hidden">
                         <div class="px-6 pt-4 pb-6">
                             <div class="image-container">
-                                <img src="data:image/jpeg;base64,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" class="infographic-image">
+                                <img src="https://kanal24.co.id/wp-content/uploads/2023/08/1690362478_WhatsApp%20Image%202023-07-26%20at%2011.29.03%20AM-1140x570.jpeg"
+                                    alt="Pengakuan Chairil Anwar" class="infographic-image">
                                 <div class="image-caption">Pengakuan Chairil Anwar sebagai Pahlawan Nasional</div>
                             </div>
                             <ul class="text-gray-300 space-y-3">
-                                <li>• <span class="text-yellow-400 font-semibold">Pahlawan Nasional</span> - Dianugerahi gelar Pahlawan Nasional oleh pemerintah Indonesia pada tahun 2010</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Pelopor Angkatan '45</span> - Diakui sebagai tokoh utama yang mempelopori gerakan sastra modern Indonesia</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Pengaruh Abadi</span> - Karya-karyanya masih dipelajari di sekolah dan universitas hingga sekarang</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Inspirasi Generasi</span> - Menginspirasi ribuan sastrawan dan penyair generasi berikutnya</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Warisan Budaya</span> - Puisi-puisinya menjadi bagian dari kurikulum pendidikan nasional</li>
-                                <li>• <span class="text-yellow-400 font-semibold">Pengakuan Internasional</span> - Karyanya diterjemahkan ke berbagai bahasa asing</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pahlawan Nasional</span> - Dianugerahi
+                                    gelar Pahlawan Nasional oleh pemerintah Indonesia pada tahun 2010</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pelopor Angkatan '45</span> - Diakui
+                                    sebagai tokoh utama yang mempelopori gerakan sastra modern Indonesia</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pengaruh Abadi</span> - Karya-karyanya
+                                    masih dipelajari di sekolah dan universitas hingga sekarang</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Inspirasi Generasi</span> -
+                                    Menginspirasi ribuan sastrawan dan penyair generasi berikutnya</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Warisan Budaya</span> - Puisi-puisinya
+                                    menjadi bagian dari kurikulum pendidikan nasional</li>
+                                <li>• <span class="text-yellow-400 font-semibold">Pengakuan Internasional</span> -
+                                    Karyanya diterjemahkan ke berbagai bahasa asing</li>
                             </ul>
                             <div class="flex justify-end mt-4">
                                 <button class="copy-button" onclick="copyContent('prestasi-content')">
@@ -334,7 +381,8 @@
                 </div>
                 <!-- Fakta Menarik Section -->
                 <div class="card p-6">
-                    <button class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
                         onclick="toggleContent('fakta')">
                         🔍 Fakta Menarik
                         <span class="text-yellow-400">▼</span>
@@ -342,14 +390,18 @@
                     <div id="fakta" class="content-hidden">
                         <div class="px-6 pt-4 pb-6">
                             <div class="image-container">
-                                <img src="data:image/jpeg;base64,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" alt="Chairil Anwar membaca puisi" class="infographic-image">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chairil_Anwar.jpg/500px-Chairil_Anwar.jpg"
+                                    alt="Chairil Anwar membaca puisi" class="infographic-image">
                                 <div class="image-caption">Chairil Anwar dalam moment membacakan puisi</div>
                             </div>
                             <ul class="text-gray-300 space-y-3">
-                                <li>• Hanya bersekolah sampai HBS (setara SMA) tetapi otodidak dalam sastra dan sangat gemar membaca</li>
-                                <li>• Bekerja sebagai redaktur di berbagai majalah termasuk "Gema Suasana" dan "Zenith"</li>
+                                <li>• Hanya bersekolah sampai HBS (setara SMA) tetapi otodidak dalam sastra dan sangat
+                                    gemar membaca</li>
+                                <li>• Bekerja sebagai redaktur di berbagai majalah termasuk "Gema Suasana" dan "Zenith"
+                                </li>
                                 <li>• Meninggal karena penyakit TBC di usia sangat muda, 26 tahun</li>
-                                <li>• Puisi "Aku" ditulis ketika ia berusia 21 tahun dan menjadi karya paling fenomenal</li>
+                                <li>• Puisi "Aku" ditulis ketika ia berusia 21 tahun dan menjadi karya paling fenomenal
+                                </li>
                                 <li>• Dijuluki "Si Binatang Jalang" dari judul puisinya yang terkenal</li>
                                 <li>• Sangat produktif menulis meskipun hidup dalam kesulitan ekonomi</li>
                                 <li>• Makamnya di TPU Karet Bivak, Jakarta, sering dikunjungi pecinta sastra</li>
@@ -364,7 +416,8 @@
                 </div>
                 <!-- Warisan Section -->
                 <div class="card p-6">
-                    <button class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
+                    <button
+                        class="accordion-button w-full text-left py-4 px-6 rounded-lg text-xl font-semibold text-white cursor-pointer flex justify-between items-center"
                         onclick="toggleContent('warisan')">
                         🌟 Warisan dan Pengakuan
                         <span class="text-yellow-400">▼</span>
@@ -372,13 +425,17 @@
                     <div id="warisan" class="content-hidden">
                         <div class="px-6 pt-4 pb-6">
                             <div class="image-container">
-                                <img src="https://alatpenterjemahjakarta.files.wordpress.com/2015/02/patungdada_chairilanwar.jpg" alt="Monumen atau patung Chairil Anwar" class="infographic-image">
+                                <img src="https://imgx.sonora.id/crop/66x0:666x400/700x465/filters:format(webp):quality(50)/photo/2022/10/19/6201ce8754559jpeg-20221019011025.jpeg"
+                                    alt="Monumen atau patung Chairil Anwar" class="infographic-image">
                                 <div class="image-caption">Monumen penghormatan untuk Chairil Anwar</div>
                             </div>
                             <p class="text-gray-300 mb-4">
-                                Chairil Anwar diakui sebagai salah satu sastrawan terpenting dalam sejarah sastra Indonesia.
-                                Karya-karyanya terus dipelajari, dianalisis, dan dihargai hingga saat ini. Warisannya tidak
-                                hanya berupa puisi-puisi indah, tetapi juga semangat pembaruan dan keberanian untuk berbeda.
+                                Chairil Anwar diakui sebagai salah satu sastrawan terpenting dalam sejarah sastra
+                                Indonesia.
+                                Karya-karyanya terus dipelajari, dianalisis, dan dihargai hingga saat ini. Warisannya
+                                tidak
+                                hanya berupa puisi-puisi indah, tetapi juga semangat pembaruan dan keberanian untuk
+                                berbeda.
                             </p>
                             <p class="text-gray-300">
                                 Pada tahun 2010, pemerintah Indonesia menganugerahinya gelar Pahlawan Nasional
@@ -400,74 +457,74 @@
                     <p class="text-gray-300">
                         Created with ❤️ by <span class="text-yellow-400 font-semibold">Farhan Akmal - XII 4</span>
                     </p>
-    <script>
-        // Page Navigation
-        function showPage(pageId) {
-            // Hide all pages
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.remove('active-page');
-            });
-            // Show selected page
-            document.getElementById(pageId).classList.add('active-page');
-            // Scroll to top
-            window.scrollTo(0, 0);
-        }
-        // Accordion Functionality
-        function toggleContent(id) {
-            const content = document.getElementById(id);
-            const button = content.previousElementSibling;
-            const arrow = button.querySelector('span');
-            content.classList.toggle('content-hidden');
-            content.classList.toggle('content-visible');
-            // Rotate arrow
-            if (content.classList.contains('content-visible')) {
-                arrow.textContent = '▲';
-            } else {
-                arrow.textContent = '▼';
-            }
-        }
-        // Copy Content Function
-        function copyContent(sectionId) {
-            const contentDiv = document.getElementById(sectionId);
-            if (!contentDiv) {
-                // Create temporary content for copying
-                const section = event.target.closest('.content-hidden, .content-visible');
-                const textContent = section ? section.innerText : '';
-                if (textContent) {
-                    navigator.clipboard.writeText(textContent).then(() => {
-                        const button = event.target;
-                        const originalText = button.textContent;
-                        button.textContent = '✓ Tersalin!';
-                        button.classList.add('copy-success');
-                        setTimeout(() => {
-                            button.textContent = originalText;
-                            button.classList.remove('copy-success');
-                        }, 2000);
-                    });
-                }
-                return;
-            }
-            const textToCopy = contentDiv.innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                const button = event.target;
-                const originalText = button.textContent;
-                button.textContent = '✓ Tersalin!';
-                button.classList.add('copy-success');
-                setTimeout(() => {
-                    button.textContent = originalText;
-                    button.classList.remove('copy-success');
-                }, 2000);
-            }).catch(err => {
-                console.error('Gagal menyalin teks: ', err);
-            });
-        }
-        // Initialize first accordion as open on page load
-        document.addEventListener('DOMContentLoaded', function () {
-            if (document.getElementById('biografi')) {
-                toggleContent('biografi');
-            }
-        });
-    </script>
+                    <script>
+                        // Page Navigation
+                        function showPage(pageId) {
+                            // Hide all pages
+                            document.querySelectorAll('.page').forEach(page => {
+                                page.classList.remove('active-page');
+                            });
+                            // Show selected page
+                            document.getElementById(pageId).classList.add('active-page');
+                            // Scroll to top
+                            window.scrollTo(0, 0);
+                        }
+                        // Accordion Functionality
+                        function toggleContent(id) {
+                            const content = document.getElementById(id);
+                            const button = content.previousElementSibling;
+                            const arrow = button.querySelector('span');
+                            content.classList.toggle('content-hidden');
+                            content.classList.toggle('content-visible');
+                            // Rotate arrow
+                            if (content.classList.contains('content-visible')) {
+                                arrow.textContent = '▲';
+                            } else {
+                                arrow.textContent = '▼';
+                            }
+                        }
+                        // Copy Content Function
+                        function copyContent(sectionId) {
+                            const contentDiv = document.getElementById(sectionId);
+                            if (!contentDiv) {
+                                // Create temporary content for copying
+                                const section = event.target.closest('.content-hidden, .content-visible');
+                                const textContent = section ? section.innerText : '';
+                                if (textContent) {
+                                    navigator.clipboard.writeText(textContent).then(() => {
+                                        const button = event.target;
+                                        const originalText = button.textContent;
+                                        button.textContent = '✓ Tersalin!';
+                                        button.classList.add('copy-success');
+                                        setTimeout(() => {
+                                            button.textContent = originalText;
+                                            button.classList.remove('copy-success');
+                                        }, 2000);
+                                    });
+                                }
+                                return;
+                            }
+                            const textToCopy = contentDiv.innerText;
+                            navigator.clipboard.writeText(textToCopy).then(() => {
+                                const button = event.target;
+                                const originalText = button.textContent;
+                                button.textContent = '✓ Tersalin!';
+                                button.classList.add('copy-success');
+                                setTimeout(() => {
+                                    button.textContent = originalText;
+                                    button.classList.remove('copy-success');
+                                }, 2000);
+                            }).catch(err => {
+                                console.error('Gagal menyalin teks: ', err);
+                            });
+                        }
+                        // Initialize first accordion as open on page load
+                        document.addEventListener('DOMContentLoaded', function () {
+                            if (document.getElementById('biografi')) {
+                                toggleContent('biografi');
+                            }
+                        });
+                    </script>
 </body>
-</html>
 
+</html>
